@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='editor'>
+
+<head>
+    <title>Wysiwyg Editor</title>
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/page-styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body ng-controller='editorController'>
+    <script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/lib/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="https://use.fontawesome.com/1ef0236b84.js"></script>
+    <script type="text/javascript" src="editorController.js"></script>
+    <script type="text/javascript" src="editorService.js"></script>
+    <header>
+        <h2>Wysiwyg Editor</h2>
+    </header>
+
+    <section>
+        <nav>
+            <span ng-repeat="icon in allIcons">
+        <button ng-click="getChange(icon.code)"><i class={{icon.class}}></i></button>
+      </span>
+            <button ng-click="toggleSource();"><i class="fa fa-code"></i></button>
+            <button ng-click="toggleEdit();">Toggle Edit</button>
+            <select name="header" ng-model="selectedHead" ng-options="head.code as head.name for head in headings" ng-change="getChange('formatBlock',selectedHead)">
+      
+    </select>
+            <select name="font" ng-model="selectedFont" ng-options="font.code as font.name for font in fontNames" ng-change="getChange('fontName',selectedFont)">
+    </select><br/>
+            <hr/> Synonyms : <br/>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <select class="form-control" name="search" ng-model="selectedSynonyms" ng-options="search.code as search.name for search  in seachQuery">
+      <option value="">{{"Seach By"}}</option>
+    </select>
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" ng-model="maxNumber" type="number" name="maxNumber" placeholder="Max No." />
+                    </div>
+                    <div class="col-md-2">
+                        <button ng-click="searchSynonyms(selectedSynonyms, maxNumber);"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <span ng-if="!isSynonymsSelected" style="color: red">Please select filter</span>
+            </div>
+        </nav>
+
+        <iframe name='textField'>
+
+  </iframe>
+    </section>
+
+    <footer>
+        <p><b>Turbo PaaS</b></p>
+    </footer>
+
+</body>
+
+</html>

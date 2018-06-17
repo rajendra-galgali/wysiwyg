@@ -1,0 +1,154 @@
+{
+  "iconList": [
+    {
+      "class": "glyphicon glyphicon-bold",
+      "code": "bold"
+    },
+    {
+      "class": "fa fa-cut",
+      "code": "cut"
+    },
+    {
+      "class": "fa fa-copy",
+      "code": "copy"
+    },
+    {
+      "class": "fa fa-paste",
+      "code": "paste"
+    },
+    {
+      "class": "fa fa-undo",
+      "code": "undo"
+    },
+    {
+      "class": "glyphicon glyphicon-repeat",
+      "code": "redo"
+    },
+    {
+      "class": "fa fa-underline",
+      "code": "underline"
+    },
+    {
+      "class": "glyphicon glyphicon-italic",
+      "code": "italic"
+    },
+    {
+      "class": "glyphicon glyphicon-superscript",
+      "code": "superscript"
+    },
+    {
+      "class": "glyphicon glyphicon-subscript",
+      "code": "subscript"
+    },
+    {
+      "class": "fa fa-strikethrough",
+      "code": "strikethrough"
+    },
+    {
+      "class": "fa fa-align-left",
+      "code": "justifyLeft"
+    },
+    {
+      "class": "fa fa-align-right",
+      "code": "justifyRight"
+    },
+    {
+      "class": "fa fa-align-justify",
+      "code": "justifyFull"
+    },
+    {
+      "class": "fa fa-indent",
+      "code": "indent"
+    },
+    {
+      "class": "fa fa-dedent",
+      "code": "outdent"
+    },
+    {
+      "class": "fa fa-list-ul",
+      "code": "insertUnorderedList"
+    },
+    {
+      "class": "fa fa-list-ol",
+      "code": "insertOrderedList"
+    },
+    {
+      "class": "fa fa-paragraph",
+      "code": "insertParagraph"
+    },
+    {
+      "class": "glyphicon glyphicon-resize-horizontal",
+      "code": "insertHorizontalRule"
+    },
+    {
+      "class": "fa fa-search",
+      "code": "searchSynonyms"
+    }
+  ],
+  "heading": [
+    {
+      "name": "Heading1",
+      "code": "H1"
+    },
+    {
+      "name": "Heading2",
+      "code": "H2"
+    },
+    {
+      "name": "Heading3",
+      "code": "H3"
+    },
+    {
+      "name": "Heading4",
+      "code": "H4"
+    },
+    {
+      "name": "Heading5",
+      "code": "H5"
+    }
+  ],
+  "fontNames": [
+    {
+      "name": "Arial",
+      "code": "Arial"
+    },
+    {
+      "name": "Comic Sans MS",
+      "code": "Comic Sans MS"
+    },
+    {
+      "name": "Courier",
+      "code": "Courier"
+    },
+    {
+      "name": "Georgia",
+      "code": "Georgia"
+    },
+    {
+      "name": "Tahoma",
+      "code": "Tahoma"
+    },
+    {
+      "name": "Times New Roman",
+      "code": "Times New Roman"
+    },
+    {
+      "name": "Verdana",
+      "code": "Verdana"
+    }
+  ],
+  "seachQuery": [
+    {
+      "name": "Means like",
+      "code": "ml"
+    },
+    {
+      "name": "Sounds like",
+      "code": "ml"
+    },
+    {
+      "name": "Spelled like",
+      "code": "ml"
+    }
+  ]
+}

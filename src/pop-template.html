@@ -1,0 +1,40 @@
+<div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="close()" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            <h3 class="modal-title">Synonyms Words</h3>
+        </div><br/>
+        <div class="col-md-12 col-sm-12 col-md-offset-1">
+
+            <div class="col-md-10 col-sm-10">
+                <input type="text" class="form-control" ng-model="searchCatValue" placeholder="Please enter categories to search">
+                <span style="color: red" ng-show="emptyField">
+                   {{emptyField}}
+            </span>
+            </div>
+        </div>
+        <br />
+        <hr/>
+        <div style="height:300px;  overflow-x: hidden; overflow-y: scroll">
+            <div class="container" ng-if="!errorMessage">
+
+                <div ng-repeat="words in synonymsList | filter:searchCatValue">
+                    <div class="col-md-2">
+                        <table class="modalTable table">
+                            <thead>
+                                <th ng-click="replceWord(words.word)">
+                                    <a href="">{{words.word}}</a>
+                                </th>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="errorMessage">
+                <div style="text-align: center ; color: red"> <b> <h2> {{errorMessage}}   </h2> </b> </div>
+            </div>
+        </div>
+    </div>
+</div>
